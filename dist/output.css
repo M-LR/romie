@@ -512,3 +512,29 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.text-red-50 {
+  --tw-text-opacity: 1;
+  color: rgb(254 242 242 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-indigo-500 {
+  text-decoration-color: #6366f1;
+}
+
+.decoration-pink-500 {
+  text-decoration-color: #ec4899;
+}
+
+.decoration-sky-500 {
+  text-decoration-color: #0ea5e9;
+}

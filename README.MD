@@ -8,7 +8,7 @@
   ```
 ## Installation
 
-Vous aurez besoin de **nodejs** 
+ **NodeJs** est recquis 
 
 `npm install`
 
