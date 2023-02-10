@@ -1,0 +1,27 @@
+{
+  "name": "romie",
+  "version": "1.0.0",
+  "description": "My dog dashboard ;)",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "dev": "webpack serve --config ./webpack.config.js --mode development",
+    "lint": "eslint ."
+  },
+  "author": "MLR",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.33.0",
+    "eslint-config-google": "^0.14.0",
+    "tailwindcss": "^3.2.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
