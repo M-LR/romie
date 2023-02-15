@@ -8,7 +8,9 @@
   ```
 ## Installation
 
- **NodeJs** est recquis 
+ **NodeJs** est recquis ainsi que les packages react et react-dom :
+ - https://www.npmjs.com/package/react
+ - https://www.npmjs.com/package/react-dom
 
 `npm install`
 
