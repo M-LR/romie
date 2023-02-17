@@ -8,9 +8,11 @@
   ```
 ## Installation
 
- **NodeJs** est recquis ainsi que les packages react et react-dom :
+ **Node** est recquis ainsi que les packages react et react-dom :
  - https://www.npmjs.com/package/react
+ - https://github.com/facebook/react/tree/main/packages/react
  - https://www.npmjs.com/package/react-dom
+ - https://github.com/facebook/react/tree/main/packages/react-dom
 
 `npm install`
 
@@ -31,7 +33,7 @@
     "lint": "eslint ."
   },
 ```
-## Tests
-
-infos : https://eslint.org/
+## Tests et debugs
+* github react  : https://github.com/facebook/react/issues
+* infos : https://eslint.org/
 
