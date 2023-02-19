@@ -23,6 +23,10 @@
 
 `npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch`
 
+> Commandes VSC
+* rcc→ 	class component skeleton
+* rrc→ 	class component skeleton with react-redux connect
+* rrdc→ 	class component skeleton with react-redux connect and dispatch
 > Serveur node configuré avec [webpack](https://www.gekkode.com/developpement/tutoriel-webpack-5-pour-les-debutants/) et [babel](https://www.gekkode.com/developpement/tutoriel-webpack-5-comment-configurer-babel/)
 
 `npm run dev`

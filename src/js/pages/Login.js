@@ -59,14 +59,14 @@ export const Login = () => {
     
     return (
 
-        <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
             <div className="w-full max-w-md space-y-8">
                 <div>
                 <img className="mx-auto w-auto inline-block rounded-full ring-2 ring-white" src="./img/undraw_dog_c7i6.svg" alt="Your Company"/>
-                <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Au panier Romie</h2>
-                <p className="mt-2 text-center text-sm text-gray-600">
+                <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-300">Au panier Romie</h2>
+                <p className="mt-2 text-center text-sm text-gray-600 dark:text-slate-300">
                 Pas encore de panier ?
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">créez en un ;)</a>
+                    <a href="#" className="font-medium text-indigo-600 dark:text-indigo-300 hover:text-indigo-500"> créez en un ;)</a>
                 </p>
                 </div>
                 <p className={classError} >
@@ -88,11 +88,11 @@ export const Login = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                         <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"/>
-                        <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">Rester connecté·e</label>
+                        <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900 dark:text-slate-300">Rester connecté·e</label>
                         </div>
 
                         <div className="text-sm">
-                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">J'ai oublié mon mot de passe</a>
+                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-300">J'ai oublié mon mot de passe</a>
                         </div>
                     </div>
 
