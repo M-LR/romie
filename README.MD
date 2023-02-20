@@ -41,3 +41,5 @@
 * github react  : https://github.com/facebook/react/issues
 * infos : https://eslint.org/
 
+* npx eslint path/to/the/file
+

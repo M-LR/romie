@@ -24,7 +24,7 @@ const root = createRoot(appContent);
 //root.render(<App />);
 //React will display <App /> in the root, and take over managing the DOM inside it.
 root.render(<App/>)
-
+ 
 
 
 
