@@ -8,15 +8,13 @@ import {
     MoonIcon,
     SunIcon,
 } from '@heroicons/react/24/outline'
-
+import { Outlet, Link } from 'react-router-dom'
 //Composants de l'application
 import { appearanceMode } from '../utils/globals'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Accueil', href: '/accueil', current: true },
+    { name: 'Connexion', href: '/connexion', current: false },
 ]
 
 function classNames(...classes) {
@@ -37,7 +35,7 @@ function handleMode() {
     appearanceMode()
 }
 
-export default function Navigation() {
+export default function Root() {
     //on accède aux boutons "soleil" et "lune" via le hook useRef = getElementById
     const sunIconRef = React.useRef(null)
     const moonIconRef = React.useRef(null)
@@ -98,9 +96,9 @@ export default function Navigation() {
                                     <div className="hidden sm:ml-6 sm:block">
                                         <div className="flex space-x-4">
                                             {navigation.map((item) => (
-                                                <a
+                                                <Link
+                                                    to={item.href}
                                                     key={item.name}
-                                                    href={item.href}
                                                     className={classNames(
                                                         item.current
                                                             ? 'bg-gray-900 text-white'
@@ -114,7 +112,7 @@ export default function Navigation() {
                                                     }
                                                 >
                                                     {item.name}
-                                                </a>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>
@@ -252,6 +250,7 @@ export default function Navigation() {
                     <MoonIcon className="w-8 h-8" aria-hidden="true" />
                 </button>
             </span>
+            <Outlet />
         </>
     )
 }
