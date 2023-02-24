@@ -9,9 +9,22 @@ class Home extends Component {
         super(props)
         this.state = { date: new Date() }
     }
+
+    componentDidMount() {
+        this.timerID = setInterval(() => this.tick(), 1000)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID)
+    }
+
+    tick() {
+        this.setState({ date: new Date() })
+    }
+
     render() {
         return (
-            <div>
+            <div className="container mx-auto px-4">
                 <h1>Bonjour, monde !</h1>
                 <h2>Il est {this.state.date.toLocaleTimeString()}.</h2>{' '}
             </div>

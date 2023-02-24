@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Générée par le composant NavLink */
+.active {
+    background-color: #374151;
+    color: #cbd5e1;
+    padding: 5px;
+    border-radius: 30px;
+}
+.main-content {
+    margin: 40px auto;
+}

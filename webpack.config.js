@@ -7,7 +7,18 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                enforce: "pre",
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                      presets: [
+                        ['@babel/preset-env', {
+                          "targets": "defaults" 
+                        }],
+                        '@babel/preset-react'
+                      ]
+                    },
+                  }], 
             },
         ],
     },
@@ -18,7 +29,11 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js',
     },
+    //https://www.robinwieruch.de/webpack-react-router/
+    //pour configurer webpack et react router -> react-router-dom
+    // historyApiFallback: true, 
     devServer: {
         static: path.resolve(__dirname, './dist'),
+        historyApiFallback: true,
     },
 }

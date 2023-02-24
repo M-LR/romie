@@ -737,6 +737,40 @@ select {
     --tw-backdrop-sepia: ;
 }
 
+.container {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -815,14 +849,6 @@ select {
     margin-top: 1.5rem;
 }
 
-.mt-10 {
-    margin-top: 2.5rem;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
 .block {
     display: block;
 }
@@ -837,10 +863,6 @@ select {
 
 .inline-flex {
     display: inline-flex;
-}
-
-.grid {
-    display: grid;
 }
 
 .hidden {
@@ -951,10 +973,6 @@ select {
     appearance: none;
 }
 
-.place-items-center {
-    place-items: center;
-}
-
 .items-center {
     align-items: center;
 }
@@ -965,11 +983,6 @@ select {
 
 .justify-between {
     justify-content: space-between;
-}
-
-.gap-x-6 {
-    -moz-column-gap: 1.5rem;
-    column-gap: 1.5rem;
 }
 
 .-space-y-px > :not([hidden]) ~ :not([hidden]) {
@@ -1056,11 +1069,6 @@ select {
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-indigo-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(79 70 229 / var(--tw-bg-opacity));
@@ -1119,26 +1127,6 @@ select {
     padding-bottom: 0.5rem;
 }
 
-.px-3\.5 {
-    padding-left: 0.875rem;
-    padding-right: 0.875rem;
-}
-
-.px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.py-2\.5 {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-}
-
-.py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
 .pb-3 {
     padding-bottom: 0.75rem;
 }
@@ -1164,11 +1152,6 @@ select {
     line-height: 2.25rem;
 }
 
-.text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
 .text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1182,21 +1165,8 @@ select {
     font-weight: 500;
 }
 
-.font-semibold {
-    font-weight: 600;
-}
-
-.leading-7 {
-    line-height: 1.75rem;
-}
-
 .tracking-tight {
     letter-spacing: -0.025em;
-}
-
-.text-gray-300 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1212,11 +1182,6 @@ select {
 .text-gray-700 {
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-800 {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -1341,6 +1306,19 @@ select {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* Générée par le composant NavLink */
+
+.active {
+    background-color: #374151;
+    color: #cbd5e1;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.main-content {
+    margin: 40px auto;
+}
+
 .hover\:bg-gray-700:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -1349,11 +1327,6 @@ select {
 .hover\:bg-indigo-700:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-indigo-500:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
 .hover\:text-indigo-500:hover {
@@ -1411,22 +1384,6 @@ select {
     --tw-ring-offset-color: #1f2937;
 }
 
-.focus-visible\:outline:focus-visible {
-    outline-style: solid;
-}
-
-.focus-visible\:outline-2:focus-visible {
-    outline-width: 2px;
-}
-
-.focus-visible\:outline-offset-2:focus-visible {
-    outline-offset: 2px;
-}
-
-.focus-visible\:outline-indigo-600:focus-visible {
-    outline-color: #4f46e5;
-}
-
 .group:hover .group-hover\:text-indigo-400 {
     --tw-text-opacity: 1;
     color: rgb(129 140 248 / var(--tw-text-opacity));
@@ -1450,11 +1407,6 @@ select {
 .dark .dark\:text-slate-300 {
     --tw-text-opacity: 1;
     color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1494,11 +1446,6 @@ select {
         padding-right: 1.5rem;
     }
 
-    .sm\:py-32 {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
     .sm\:pr-0 {
         padding-right: 0px;
     }
@@ -1506,11 +1453,6 @@ select {
     .sm\:text-sm {
         font-size: 0.875rem;
         line-height: 1.25rem;
-    }
-
-    .sm\:text-5xl {
-        font-size: 3rem;
-        line-height: 1;
     }
 }
 
